@@ -1,0 +1,8 @@
+<resources>
+    <string name="ApplicationName">MovieApp</string>
+    <string name="Username">Enter Your Username</string>
+    <string name="logo">Logo</string>
+    <string name="SignIn">Sign In</string>
+    <string name="Password">Enter Your Password</string>
+    <string name="more">Load More</string>
+</resources>

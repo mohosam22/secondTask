@@ -1,0 +1,95 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/purple"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/movieImageIv"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:contentDescription="Movie Poster"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/movieNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="20dp"
+            android:text="Movie Name"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/movieImageIv"
+            app:layout_constraintTop_toTopOf="@id/movieImageIv" />
+
+        <TextView
+            android:id="@+id/movieDescriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="2"
+            android:text="Short description"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/movieNameTv"
+            app:layout_constraintTop_toBottomOf="@id/movieNameTv" />
+
+        <TextView
+            android:id="@+id/movieDetailsTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Director"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/movieDescriptionTv"
+            app:layout_constraintTop_toBottomOf="@id/movieDescriptionTv" />
+
+        <TextView
+            android:id="@+id/moviePublishDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish date"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/movieDetailsTv"
+            app:layout_constraintTop_toBottomOf="@id/movieDetailsTv" />
+
+        <TextView
+            android:id="@+id/movieRateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate: 8.5"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/movieDetailsTv"
+            app:layout_constraintTop_toBottomOf="@id/movieDetailsTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
